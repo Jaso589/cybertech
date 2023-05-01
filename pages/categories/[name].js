@@ -3,6 +3,7 @@ import axios from 'axios';
 import styles from "@/styles/CategoryProducts.module.css"
 import Link from 'next/link';
 import Image from 'next/image';
+import { dbConnect } from '@/utils/dbConnect';
 
 const CategoryPage = ({ products, name }) => {
   // console.log(products)
@@ -47,6 +48,7 @@ const CategoryPage = ({ products, name }) => {
 };
 
 export async function getServerSideProps(context) {
+  dbConnect()
   const { name } = context.query;
   try {
     const response = await axios.get(`${process.env.API_URL}/api/categoryName?categoryName=${name}`);

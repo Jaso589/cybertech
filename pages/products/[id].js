@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import styles from '@/styles/ProductPage.module.css'
 import Image from 'next/image';
 import { addToCart, getCart } from '@/utils/storageNext';
+import { dbConnect } from '@/utils/dbConnect';
 
 const ProductPage = ({ product: initialProduct }) => {
   const [product, setProduct] = useState(initialProduct);
@@ -57,8 +58,11 @@ const ProductPage = ({ product: initialProduct }) => {
 export default ProductPage;
 
 export async function getServerSideProps(context) {
+  dbConnect();
   const { id } = context.query;
+
   const product = await Product.findById(id);
+
   return {
     props: {
       product: JSON.parse(JSON.stringify(product)),
