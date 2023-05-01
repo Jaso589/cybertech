@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const CategoryPage = ({ products, name }) => {
-  console.log(products)
+  // console.log(products)
 
   return (
     <Layout>
