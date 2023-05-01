@@ -1,0 +1,83 @@
+.cart_container{
+    min-height: 100vh;
+    padding-top: 200px;
+    padding-bottom: 40px;
+}
+.cart_container table{
+    width: 100%;
+}
+
+.cart_container table tr th{
+    /* display: flex; */
+    text-align: left;
+    background-color: var(--white_secondary);
+    padding: 10px;
+}
+
+.table_img{
+        width: 200px;
+        height: 200px;
+        position: relative;
+}
+.table thead .table_img{
+    height: 40px;
+}
+.table_img img{
+    object-fit: cover;
+}
+.total_pay{
+    column-span: 4;
+    column-span:calc(3);
+    background: red;
+}
+
+.table_container {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .actions{
+    display: flex;
+  }
+  .btn_table{
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    margin-left: 10px;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .btn_table:hover{
+    background: transparent;
+    color: var(--black);
+    border: 1px solid var(--black);
+  }
+  .checkoutButton{
+    background-color: var(--yellow);
+    color: #fff;
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    font-size: 1rem;
+  }
+  .checkoutButton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+@media only screen and (max-width: 600px) {
+    .table th,
+    .table td {
+      display: block;
+    }
+  }

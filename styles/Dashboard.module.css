@@ -1,0 +1,141 @@
+.dashboard_container{
+    padding: 15px;
+    padding-right: 20px;
+    background-color: var(--white_secondary);
+    /* box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.25); */
+    width:  100vw;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+}
+.form div{
+    width: 320px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form div label{
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+.form div input{
+    height: 40px;
+    background-color: var(--box_gray);
+    border: none;
+    padding: 10px;
+}
+.form div textarea{
+    height: 40px;
+    background-color: var(--box_gray);
+    border: none;
+    padding: 10px;
+}
+.form div select{
+    height: 40px;
+    background-color: var(--box_gray);
+    border: none;
+    padding: 10px;
+}
+.form div button[type='submit']{
+    height: 40px;
+    background-color: var(--yellow);
+    color: #fff;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+.dashboard_container section{
+    margin-top: 20px;
+}
+.table{
+    margin-top: 20px;
+}
+.table thead{
+    width: 100%;
+}
+.table thead tr{
+    background-color: var(--blue);
+    color: #fff;
+    
+}
+.table thead th{
+    font-weight: 400;
+    height: 30px;
+    min-width: 100px;
+}
+.table tbody{
+    background-color: var(--box_gray);
+}
+.table tbody td{
+    padding: 5px;
+}
+.table_container {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .actions{
+    display: flex;
+  }
+  .btn_table{
+    background-color: var(--black);
+    border: none;
+    color: var(--white);
+    margin-left: 10px;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  .btn_table:hover{
+    background: transparent;
+    color: var(--black);
+    border: 1px solid var(--black);
+  }
+  .img_product{
+    width: auto;
+    height: 200px;
+    position: relative;
+  }
+  .img_product img{
+    object-fit: cover;
+  }
+  @media only screen and (max-width: 600px) {
+    .table th,
+    .table td {
+      display: block;
+    }
+  }
+@media (min-width:900px){
+    .dashboard_container{
+        padding: 15px;
+        padding-right: 20px;
+        background-color: var(--white_secondary);
+        /* box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.25); */
+        width:  auto;
+    }
+    .form{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
+    }
+    .form div{
+        width: 300px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
