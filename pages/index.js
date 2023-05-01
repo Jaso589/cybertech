@@ -70,7 +70,7 @@ export default function Home({categories}) {
 
 export async function getServerSideProps() {
   // Hacer una solicitud HTTP GET a la API REST para obtener las categorías
-  const res = await axios.get(`${process.env.API_URL}api/categories`);
+  const res = await axios.get(`${process.env.API_URL}/api/categories`);
 
   // Extraer los datos de la respuesta de la API
   const categories = res.data;
