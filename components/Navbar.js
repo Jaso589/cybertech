@@ -20,10 +20,10 @@ export const navLinks = [
         page:'Nosotros',
         href:'/about'
     },
-    {
-      page:'Products',
-      href:'/products'
-    },
+    // {
+    //   page:'Products',
+    //   href:'/products'
+    // },
     // {
     //   page:'Certificaciones',
     //   href:'/certifications'
